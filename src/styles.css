@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+}
+img {
+  width: 100%;
+}
+
+.article-box {
+  margin-top: 30px;
+  border: 1px solid #333;
+  width: 300px;
+}
+
+.article-modal {
+  width: 500px;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+}
+
+.article-modal.is-active {
+  visibility: inherit;
+}
+
+::view-transition-group(*) {
+  animation-duration: 2s;
+}
+
+.article {
+  view-transition-name: article;
+  contain: paint;
+}
